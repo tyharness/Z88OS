@@ -5,36 +5,40 @@ when I was a student. I had a short course using ANSYS 5.0 on the VAX but I lear
 You couldn't get the time on the VAX.
 
 For educational purposes I'd like to compile the source for Raspberry PI 3.  I don't fancy trying to port the later 
-gui versions but v15 I think I can do, and hopefully you young shaver's will have as much fun (or frustration) 
-learning finite element analysis and a touch of ANSI C thrown in for good measure.
+gui versions but I think v15 I can do, and hopefully all you young shaver's will have as much fun (or frustration) 
+learning finite element analysis plus a touch of ANSI C thrown in for good measure.
 
 Here's an old tutorial I created for v10 or v12 some years ago, but the v15 input files need a little tweeking.
 
-<a href="http://www.tyharness.dx.am/z88/bp5/bp5.htm" target="_blank"> Example bp5 by Ty Harness </a>
+<a href="http://www.tyharness.dx.am/z88/bp5/bp5.htm"> Example bp5 by Ty Harness </a>
 
-I've teaked it and the example runs in v15.  It's in the directory examples/tyharness1/bp5_v15/
+I've teaked it and the example does runs in v15.  It's in the directory examples/tyharness1/bp5_v15/
 
 I've tweaked the makefiles and they are in /make/raspberrypi/ which compile and pop the binaries into /bin/raspberrypi
 
-I've also compiled the binaries for the Raspberry PI3 and have uploaded /bin/raspberrypi/ as soon as I can with instructions on how
-to compile and execute the example.
+I've also compiled the binaries for the Raspberry PI3 and have uploaded /bin/raspberrypi/
 
-Set your path varible so z88com can execute all the programs - I do this for each session rather than
+As soon as I can I will test and provide more instructions on how to compile and execute z88.
+
+Set your path varible so z88com can execute all the programs - I do this for each session rather than perm.
 
 open a terminal and navigate to:
 cd ~/Z88OS-master/bin/raspberrypi
 
 export PATH=$PATH:~/Z88OS-master/bin/raspberrypi
 
-Becareful if you want to set it perm.  Different flavours of linux do it a different way and it's easy to screw
+Becareful if you want to set it perm.  Different flavours of linux do it a variety of different ways and it's easy to screw
 it all up. https://opensource.com/article/17/6/set-path-linux
 
-to execute type
+then with the path set type
 z88com
 
-Hit the choly solver and view the o2 and o3 output file and compare the y deflection with the analytic solution above.
+to execute the Z88 commander dialog
 
-enjoy
+Hit the choly solver and view the o2 and o3 output file and compare the y deflection with the analytic solution 
+in the website above.
+
+Enjoy
 
 Ty Harness. 12/06/2020
 
