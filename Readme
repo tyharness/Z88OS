@@ -1,22 +1,40 @@
 Hello All,
 
-I'd just like thank Prof. Frank Rieg. for developing z88 over many years.  I first z88 version 10 for windows 20 plus years ago
-when I was a student. I had a short course using ANSYS 5.0 on the VAX but I learnt a great deal from z88 at home.  You couldn't get the
-time on the VAX.
+I'd just like thank Prof. Frank Rieg. for developing z88 over many years.  I first used z88 version 10 for windows 25 plus years ago
+when I was a student. I had a short course using ANSYS 5.0 on the VAX but I learnt a great deal from z88 at home.  
+You couldn't get the time on the VAX.
 
-For educational purposes I'd like to compile the source for Raspberry PI 3.  I don't fancy port the later gui versions
-but v15 I think I can do and hopefully young shaver's will have as much fun (or frustration) learning finite element analysis 
-and a touch of ANSI C thrown in for good measure.
+For educational purposes I'd like to compile the source for Raspberry PI 3.  I don't fancy trying to port the later 
+gui versions but v15 I think I can do, and hopefully you young shaver's will have as much fun (or frustration) 
+learning finite element analysis and a touch of ANSI C thrown in for good measure.
 
-Here's an old tutorial I created for v10 or v12 some years ago, but v15 input files need a little tweeking.
+Here's an old tutorial I created for v10 or v12 some years ago, but the v15 input files need a little tweeking.
 
-http://www.tyharness.dx.am/z88/bp5/bp5.htm
+<a href="http://www.tyharness.dx.am/z88/bp5/bp5.htm" target="_blank"> Example bp5 by Ty Harness </a>
 
-I've teaked it and the example runs in v15.  It's in the directory examples/bp5_v15
+I've teaked it and the example runs in v15.  It's in the directory examples/tyharness1/bp5_v15/
 
+I've tweaked the makefiles and they are in /make/raspberrypi/ which compile and pop the binaries into /bin/raspberrypi
 
-I've compiled the binaries for the Raspberry PI3 and will upload as soon as I can with instructions on how
+I've also compiled the binaries for the Raspberry PI3 and have uploaded /bin/raspberrypi/ as soon as I can with instructions on how
 to compile and execute the example.
+
+Set your path varible so z88com can execute all the programs - I do this for each session rather than
+
+open a terminal and navigate to:
+cd ~/Z88OS-master/bin/raspberrypi
+
+export PATH=$PATH:~/Z88OS-master/bin/raspberrypi
+
+Becareful if you want to set it perm.  Different flavours of linux do it a different way and it's easy to screw
+it all up. https://opensource.com/article/17/6/set-path-linux
+
+to execute type
+z88com
+
+Hit the choly solver and view the o2 and o3 output file and compare the y deflection with the analytic solution above.
+
+enjoy
 
 Ty Harness. 12/06/2020
 
