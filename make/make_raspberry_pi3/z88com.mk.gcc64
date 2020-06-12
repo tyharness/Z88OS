@@ -1,0 +1,43 @@
+#############################################################################
+# Makefile for Z88COM
+# for the GCC compiler
+# Warning: Mind the order of arguments:$(CC) $(OBJECTSC) $(CFLAGS) -o $@
+# 9.3.2017 Rieg
+#############################################################################
+DIRECA = $(HOME)/Z88OS-master
+DIRUNI = $(DIRECA)/src/z88com/unix
+DIRCOM = $(DIRECA)/src/z88com/common
+DIROUT = $(DIRECA)/bin/raspberrypi
+
+CC = gcc
+CFLAGS = -I$(DIRCOM) -DFR_UNIX -DFR_XDOUB -DFR_XLONG -DFR_LINUX -O2 \
+         `pkg-config --cflags --libs gtk+-2.0`
+
+OBJECTSC = z88com.o cb88c.o ale88c.o lan88c.o wlog88c.o rcol88c.o
+
+z88com: $(OBJECTSC)
+	$(CC) $(OBJECTSC) $(CFLAGS) -o $@
+	mv -f z88com $(DIROUT)
+
+z88com.o: $(DIRUNI)/z88com.c
+	$(CC) $(CFLAGS) -c $(DIRUNI)/z88com.c
+
+cb88c.o: $(DIRUNI)/cb88c.c
+	$(CC) $(CFLAGS) -c $(DIRUNI)/cb88c.c
+
+ale88c.o: $(DIRUNI)/ale88c.c
+	$(CC) $(CFLAGS) -c $(DIRUNI)/ale88c.c
+
+rcol88c.o: $(DIRUNI)/rcol88c.c
+	$(CC) $(CFLAGS) -c $(DIRUNI)/rcol88c.c
+
+wlog88c.o: $(DIRCOM)/wlog88c.c
+	$(CC) $(CFLAGS) -c $(DIRCOM)/wlog88c.c
+
+lan88c.o: $(DIRCOM)/lan88c.c
+	$(CC) $(CFLAGS) -c $(DIRCOM)/lan88c.c
+
+
+
+
+
