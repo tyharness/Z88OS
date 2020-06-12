@@ -1,0 +1,22 @@
+Hello All,
+
+I'd just like thank Prof. Frank Rieg. for developing z88 over many years.  I first z88 version 10 for windows 20 plus years ago
+when I was a student. I had a short course using ANSYS 5.0 on the VAX but I learnt a great deal from z88 at home.  You couldn't get the
+time on the VAX.
+
+For educational purposes I'd like to compile the source for Raspberry PI 3.  I don't fancy port the later gui versions
+but v15 I think I can do and hopefully young shaver's will have as much fun (or frustration) learning finite element analysis 
+and a touch of ANSI C thrown in for good measure.
+
+Here's an old tutorial I created for v10 or v12 some years ago, but v15 input files need a tweek. I've teaked it
+and the example runs in v15.  It's in the directory below bp5_v15
+
+http://www.tyharness.dx.am/z88/bp5/bp5.htm
+
+
+I've compiled the binaries for the Raspberry PI3 and will upload as soon as I can with instructions on how
+to compile and execute the project.
+
+Ty Harness.
+
+
