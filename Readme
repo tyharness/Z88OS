@@ -8,14 +8,15 @@ For educational purposes I'd like to compile the source for Raspberry PI 3.  I d
 but v15 I think I can do and hopefully young shaver's will have as much fun (or frustration) learning finite element analysis 
 and a touch of ANSI C thrown in for good measure.
 
-Here's an old tutorial I created for v10 or v12 some years ago, but v15 input files need a tweek. I've teaked it
-and the example runs in v15.  It's in the directory below bp5_v15
+Here's an old tutorial I created for v10 or v12 some years ago, but v15 input files need a little tweeking.
 
 http://www.tyharness.dx.am/z88/bp5/bp5.htm
 
+I've teaked it and the example runs in v15.  It's in the directory examples/bp5_v15
+
 
 I've compiled the binaries for the Raspberry PI3 and will upload as soon as I can with instructions on how
-to compile and execute the project.
+to compile and execute the example.
 
 Ty Harness. 12/06/20
 
