@@ -1,1 +1,19 @@
-to do
+Get you going quick
+
+ensure you have permmision to execute all files in the bin directory
+
+CD ~/home/pi/Z88OS-master/bin/raspberrypi/chmod +x *
+
+Copy Over all the example file from example/ty/bp5 into this directory and then run the solver:
+
+make sure you permission for those files as well
+
+then a quick test:
+
+./z88r -c -choly
+
+if successful
+
+view the deflection and rotation reults:
+
+cat z88o2.txt
